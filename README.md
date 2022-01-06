@@ -188,6 +188,15 @@ Position can be "LT" (Left Top Corner), "RT" (Right Top Corner), "LB" (Left Bott
 The watermark will not appear unless `watermark_options` specifies the position. `padding_x` and `padding_y` default to
 `10`.
 
+
+### Taking Video Clips
+Instructions on how to create Video Clips
+
+```ruby
+    options = { seek_time: start_time.to_s, end_time: end_time.to_s, resolution: '1920x1080' }
+    @video.transcode("./example.mp4", options)
+```
+
 ### Taking Screenshots
 
 You can use the screenshot method to make taking screenshots a bit simpler.
