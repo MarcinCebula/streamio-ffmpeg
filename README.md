@@ -193,7 +193,7 @@ The watermark will not appear unless `watermark_options` specifies the position.
 Instructions on how to create Video Clips
 
 ```ruby
-    options = { seek_time: start_time.to_s, end_time: end_time.to_s, resolution: '1920x1080' }
+    options = { seek_time: "00:02:55.780", end_time: "00:03:58.180", resolution: '1920x1080' }
     @video.transcode("./example.mp4", options)
 ```
 
