@@ -140,6 +140,10 @@ module FFMPEG
     def convert_seek_time(value)
       ["-ss", value]
     end
+    
+    def convert_end_time(value)
+      ["-to", value]
+    end
 
     def convert_screenshot(value)
       result = []
